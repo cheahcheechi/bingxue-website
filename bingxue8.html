@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bingxue Malaysia</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: #bde0fe;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .drinks, .order, .contact {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #0077b6;
+    }
+    .drink-item {
+      margin-bottom: 15px;
+    }
+    .drink-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .price {
+      color: #888;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    input[type="submit"] {
+      background: #0077b6;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    footer {
+      background: #caf0f8;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bingxue Malaysia</h1>
+  <p>Cool, Creamy, Refreshing</p>
+</header>
+
+<div class="section drinks">
+  <h2>Popular Drinks</h2>
+
+  <div class="drink-item">
+    <div class="drink-name">Brown Sugar Bubble Tea</div>
+    <p>Rich, creamy milk with brown sugar pearls<br><span class="price">RM6.5 (Medium), RM8 (Large)</span></p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-name">Jasmine Milk Tea</div>
+    <p>Light, floral jasmine tea with smooth milk<br><span class="price">RM6 (Medium), RM7.5 (Large)</span></p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-name">Grape Jasmine Tea</div>
+    <p>Fruity grape flavor meets fresh jasmine tea<br><span class="price">RM7 (Large only)</span></p>
+  </div>
+</div>
+
+<div class="section order">
+  <h2>Order Online</h2>
+  <form action="https://formspree.io/f/movddzpb" method="POST">
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="drink">Choose Drink *</label>
+    <select id="drink" name="drink" required>
+      <option value="Brown Sugar Bubble Tea">Brown Sugar Bubble Tea</option>
+      <option value="Jasmine Milk Tea">Jasmine Milk Tea</option>
+      <option value="Grape Jasmine Tea">Grape Jasmine Tea</option>
+    </select>
+
+    <label for="size">Size *</label>
+    <select id="size" name="size" required>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+    </select>
+
+    <label for="temperature">Choice of Temperature *</label>
+    <select id="temperature" name="temperature" required>
+      <option value="Normal Iced">Normal Iced</option>
+      <option value="No Iced">No Iced</option>
+      <option value="Hot">Hot</option>
+    </select>
+
+    <label for="sugar">Sugar Level *</label>
+    <select id="sugar" name="sugar" required>
+      <option value="100%">100%</option>
+      <option value="50%">50%</option>
+      <option value="30%">30%</option>
+      <option value="0%">0%</option>
+    </select>
+
+    <input type="submit" value="Submit Order">
+  </form>
+</div>
+
+<div class="section contact">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:acc.fivetastefbg@gmail.com">acc.fivetastefbg@gmail.com</a></p>
+  <p>Instagram: <a href="https://instagram.com/bingxue.my" target="_blank">@bingxue.my</a></p>
+  <p>Phone: <a href="tel:+60124994963">+60124994963</a></p>
+  <p>Address: Jalan Kajang Jaya 1, Kawasan Perindustrian Kajang Jaya, 43500 Semenyih, Selangor Darul Ehsan</p>
+  <p>Visit us during hours below:</p>
+  <ul>
+    <li>Mon–Fri: 8:30 am–5:30 pm</li>
+    <li>Sat–Sun: Closed</li>
+  </ul>
+</div>
+
+<footer>
+  &copy; 2025 Bingxue Malaysia. All rights reserved.
+</footer>
+
+</body>
+</html>
